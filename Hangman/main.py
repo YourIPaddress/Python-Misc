@@ -1,5 +1,5 @@
 import random as rd
-with open('wordList.txt', 'r') as f:
+with open('HangMan\\wordList.txt', 'r') as f:
     words = f.readlines()
 
 word = rd.choice(words)[:-1]
@@ -31,4 +31,4 @@ while not done:
 if done:
     print(f"You found the word! It was {word}!")
 else:
-    print("Game Over! The word was {word}!")
+    print(f"Game Over! The word was {word}!")
