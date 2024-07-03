@@ -8,6 +8,7 @@ guesses = []
 allowed_guesses = 7
 done = False
 
+
 while not done:
     for letter in word:
         if letter.lower() in guesses:
@@ -32,3 +33,6 @@ if done:
     print(f"You found the word! It was {word}!")
 else:
     print(f"Game Over! The word was {word}!")
+
+
+
